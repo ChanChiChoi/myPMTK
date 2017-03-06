@@ -20,7 +20,7 @@ def sqDistance(p, q, pSos = None, qSos = None):
     if not pSos:
         pSos = (p*p).sum(1).reshape(-1,1)
     if not qSos:
-        qSos = (q*q).sum(1).reshape(-1,1)
+        qSos = (q*q).sum(1)
         
     oneMatrix = np.ones((p.shape[0], q.shape[0]))
     
